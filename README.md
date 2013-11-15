@@ -1,23 +1,22 @@
 Simple Nexmo SMS/TTS(VoiceCall) Sender
 ==
 
+Nexmo is a SMS/Voice sender service with only API access.
 
-Nexmo is a SMS/Voice sender service , and only provide API to access.
-
-[https://www.nexmo.com](http://markdown.tw)
-
+<https://www.nexmo.com>
 
 
-about this simple sender
+
+About this simple sender
 --
 
-1. for PHP
+1. For PHP
 2. Support Traditional Chinese for Voice Call.
-3. simple usage
+3. Simple to use
 
 
 
-#####This simple Sender has following files:
+#####This simple Sender has the following files:
 
 1. function.php
 2. sendmessage.php
@@ -29,25 +28,25 @@ about this simple sender
 3. NexmoMessage.php
 4. NexmoReceipt.php
 
-#####[nexmo-tts-zh](https://github.com/jeremy5189/nexmo-tts-zh) for Nexmo Text To Speech Traditional Chinese (UTF-8) Support
+#####[nexmo-tts-zh](https://github.com/jeremy5189/nexmo-tts-zh) for Nexmo Text To Speech Traditional Chinese (UTF-8) support
 
 5. converter.class.php
 6. nexmo-tts-zh/*
 7. tables/*
 
 
-usage
+Usage
 --
 
-###1 : Setup API key/secret
-######open function.php , setting your key/secret:
+###1 : Set up API key/secret
+######Open function.php and set your key/secret:
 
 
 	$api_key="put your key here";
 	$api_secret="put your secret key here";
 
 
-###2 : include function.php
+###2 : Include function.php
 
 	include("function.php");
 
@@ -69,9 +68,9 @@ usage
 	$text="utf-8 here , hello 你好";
 	NexmoSendVoice($to ,$text);
 
-###4 : function return(OPTIONAL)
+###4 : Returning value (OPTIONAL)
 
-#####SMS return like this
+#####SMS returns something like:
 	stdClass Object
 	(
 	   	[messagecount] => 1
@@ -92,9 +91,9 @@ usage
     	[cost] => 0.011
 	)
 
-you can check detail at [Nexmo Document](https://docs.nexmo.com/index.php/messaging-sms-api/send-message)
+You may refer [Nexmo Document](https://docs.nexmo.com/index.php/messaging-sms-api/send-message) for details.
 
-#####TTS return like this
+#####TTS returns something like:
 
 	stdClass Object
 	(
@@ -104,4 +103,4 @@ you can check detail at [Nexmo Document](https://docs.nexmo.com/index.php/messag
 	)
 	
 
-you can check detail at [Nexmo Document](https://docs.nexmo.com/index.php/voice-api/text-to-speech)
+You may refer [Nexmo Document](https://docs.nexmo.com/index.php/voice-api/text-to-speech) for details.
