@@ -16,13 +16,13 @@ About this simple sender
 
 
 
-#####This simple Sender has the following files:
+#####This simple sender has the following files:
 
 1. function.php
 2. sendmessage.php
 3. sendvoice.php
 
-#####[Nexmo official API](https://docs.nexmo.com/index.php/pre-built-libraries) (for sending sms)
+#####[Nexmo official API](https://docs.nexmo.com/index.php/pre-built-libraries) (for sending SMS)
 
 2. NexmoAccount.php
 3. NexmoMessage.php
